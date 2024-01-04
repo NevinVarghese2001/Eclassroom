@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 import './Login.css';
+import google from './assets/Google svg (1).png';
+import apple from './assets/Apple svg (1).png';
+import facebook from './assets/Facebook svg.png';
+import email from './assets/email.png';
+import Dashboard from './Dashboard';
 
 function Login() {
     return (
@@ -16,19 +21,19 @@ function Login() {
                         <p className='lb-pass'>password</p>
                         <input type="password" className='in-pass' />
                     </div>
-                    <p className='frgt'>forgot your password? <a href="">click here</a></p>
-                    <button id='login-bt'>continue</button>
+                    <p className='frgt'>forgot your password?<a href="" className='click'>click here</a></p>
+                    <button id='login-bt' onClick={Dashboard} >continue</button>
                     <div className='logwith'>
                         <div className='line1'></div>
                         <p>or login with</p>
                         <div className='line2'></div>
                          </div>
 
-                    <div>
-                        <a href=""> <img src="" alt="" /></a>
-                        <a href="" ><img src="" alt="" /></a>
-                        <a href=""> <img src="" alt="" /></a>
-                        <a href="" ><img src="" alt="" /></a>
+                    <div className='connect'>
+                        <div className='con-icon'><a href=""> <img src={google} alt="" className='google' /></a></div>
+                        <div className='con-icon'><a href="" ><img src={apple} alt="" className='apple' /></a></div>
+                        <div className='con-icon'><a href=""> <img src={facebook} alt="" className='facebook' /></a></div>
+                        <div className='con-icon'><a href="" ><img src={email} alt="" className='email' /></a></div>
                     </div>
                 </div>
                     

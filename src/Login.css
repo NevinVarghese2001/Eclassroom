@@ -85,8 +85,8 @@ line-height: 36px; /* 112.5% */
 } 
 .frgt{
     font-size: 12px;
-    
-    margin-left: -40px;
+    margin-top: 1px;
+    margin-left: 0px;
 }
 
 #login-bt{
@@ -121,4 +121,23 @@ background: linear-gradient(93deg, #FF5956 11.05%, #FF2171 55.11%, #FC6549 92.38
     width: 80px;
     height: 1px;
     background: #D9D9D9;;
+}
+.connect{
+    display: flex;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+.con-icon{
+    padding: 5px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 10px;
+    height: 30px;
+}
+.apple,.google,.facebook,.email{
+    height:25px ;
+    margin-top: auto;
+}
+.click{
+    font-size: small;
+    margin-left: 0%;
 }
