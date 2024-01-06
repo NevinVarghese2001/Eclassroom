@@ -5,6 +5,8 @@ import apple from './assets/Apple svg (1).png';
 import facebook from './assets/Facebook svg.png';
 import email from './assets/email.png';
 import Dashboard from './Dashboard';
+import { Link } from 'react-router-dom';
+
 
 function Login() {
     return (
@@ -14,18 +16,20 @@ function Login() {
                 <h1 className='head'>Welcome to LMS</h1>
                     <p className='subhead'>Your step to flexibility begins here</p>
                     <div className='inp'>
-                        <p className='lb-mail'>Email</p>
+                        <p className='lb-mail'>Email address</p>
                         <input type="email" name="email" className='in-mail'  />
                     </div>
                     <div className='inp2'>
-                        <p className='lb-pass'>password</p>
-                        <input type="password" className='in-pass' />
+                        <div><p className='lb-pass'>Password</p></div>
+                        <div>
+                            <input type="password" className='in-pass' />
+                            </div>
                     </div>
-                    <p className='frgt'>forgot your password?<a href="" className='click'>click here</a></p>
-                    <button id='login-bt' onClick={Dashboard} >continue</button>
+                    <p className='frgt'>Forgot your password?<a href="" className='click'>click here</a></p>
+                    <Link to={`/Dashboard/`}><button id='login-bt' >continue</button></Link>
                     <div className='logwith'>
                         <div className='line1'></div>
-                        <p>or login with</p>
+                        <div className='logwith-p'><p>or login with</p></div>
                         <div className='line2'></div>
                          </div>
 
