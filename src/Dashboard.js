@@ -55,7 +55,7 @@ function Dashboard() {
 
           <div className='menu'>
             <div >
-              <a href="" className='ma'><div className='m1'><div><img src={home} alt="" className='mimg' /></div><div><h5 className='mlist'>Home</h5></div></div></a>
+              <a href="" className='ma'><div className='m1'><div><img src={home} alt="" className='mimg' /></div><div><h5 className='mlist' id='m-home'>Home</h5></div></div></a>
               <a href="" className='ma'><div className='m1'><div><img src={msg} alt="" className='mimg' /></div><div><h5 className='mlist'>Messages</h5></div></div></a>
               <a href="" className='ma'><div className='m1'><div><img src={libr} alt="" className='mimg' /></div><div><h5 className='mlist'>E-Library</h5></div></div></a>
               <a href="" className='ma'><div className='m1'><div><img src={cal} alt="" className='mimg' /></div><div><h5 className='mlist'>Calander</h5></div></div></a>

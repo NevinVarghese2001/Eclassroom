@@ -198,3 +198,9 @@ text-transform: uppercase;
     font-size: small;
     margin-left: 0%;
 }
+
+.email-error,.password-error{
+    font-size: x-small;
+    color: red;
+    margin-left: 10px;
+}
